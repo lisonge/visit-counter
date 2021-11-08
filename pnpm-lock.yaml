@@ -2,28 +2,30 @@ lockfileVersion: 5.3
 
 specifiers:
   '@cloudflare/workers-types': ^2.2.2
-  '@cloudflare/wrangler': ^1.19.3
+  '@cloudflare/wrangler': ^1.19.4
+  '@types/node': ^16.11.6
   concurrently: ^6.3.0
-  esbuild: ^0.13.6
+  esbuild: ^0.13.12
   eval5: ^1.4.6
-  node-html-parser: ^5.0.0
-  ts-node: ^10.3.0
+  node-html-parser: ^5.1.0
+  ts-node: ^10.4.0
   typescript: ^4.4.4
   vue: ^2.6.14
   vue-server-renderer: ^2.6.14
 
 dependencies:
   eval5: registry.npmmirror.com/eval5/1.4.6
-  node-html-parser: registry.npmmirror.com/node-html-parser/5.0.0
+  node-html-parser: registry.npmmirror.com/node-html-parser/5.1.0
   vue: registry.npmmirror.com/vue/2.6.14
   vue-server-renderer: registry.nlark.com/vue-server-renderer/2.6.14
 
 devDependencies:
   '@cloudflare/workers-types': registry.npmmirror.com/@cloudflare/workers-types/2.2.2
-  '@cloudflare/wrangler': registry.npmmirror.com/@cloudflare/wrangler/1.19.3
+  '@cloudflare/wrangler': registry.npmmirror.com/@cloudflare/wrangler/1.19.4
+  '@types/node': registry.npmmirror.com/@types/node/16.11.6
   concurrently: registry.npmmirror.com/concurrently/6.3.0
-  esbuild: registry.npmmirror.com/esbuild/0.13.6
-  ts-node: registry.npmmirror.com/ts-node/10.3.0_typescript@4.4.4
+  esbuild: registry.npmmirror.com/esbuild/0.13.12
+  ts-node: registry.npmmirror.com/ts-node/10.4.0_0cb88d80cb04d25b21fa3ec194608c65
   typescript: registry.npmmirror.com/typescript/4.4.4
 
 packages:
@@ -31,20 +33,6 @@ packages:
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=, tarball: concat-map/download/concat-map-0.0.1.tgz}
     dev: true
-
-  /source-map/0.5.6:
-    resolution: {integrity: sha1-dc449SvwczxafwwRjYEzSiu19BI=, tarball: source-map/download/source-map-0.5.6.tgz}
-    engines: {node: '>=0.10.0'}
-    dev: false
-
-  registry.nlark.com/@babel/runtime/7.15.4:
-    resolution: {integrity: sha1-/RfRa/34eObdAtGXU6OfqKjZyEo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/runtime/download/@babel/runtime-7.15.4.tgz}
-    name: '@babel/runtime'
-    version: 7.15.4
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
-    dev: false
 
   registry.nlark.com/@cspotcode/source-map-consumer/0.8.0:
     resolution: {integrity: sha1-M79LeznBeIIWBvZpu8RHpqYpeGs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@cspotcode/source-map-consumer/download/@cspotcode/source-map-consumer-0.8.0.tgz}
@@ -91,7 +79,7 @@ packages:
     dev: true
 
   registry.nlark.com/acorn/7.4.1:
-    resolution: {integrity: sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/acorn/download/acorn-7.4.1.tgz?cache=0&sync_timestamp=1631600248170&other_urls=https%3A%2F%2Fregistry.nlark.com%2Facorn%2Fdownload%2Facorn-7.4.1.tgz}
+    resolution: {integrity: sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/acorn/download/acorn-7.4.1.tgz}
     name: acorn
     version: 7.4.1
     engines: {node: '>=0.4.0'}
@@ -297,13 +285,6 @@ packages:
     version: 1.0.5
     engines: {node: '>=0.8.0'}
     dev: false
-
-  registry.nlark.com/follow-redirects/1.14.4:
-    resolution: {integrity: sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.4.tgz}
-    name: follow-redirects
-    version: 1.14.4
-    engines: {node: '>=4.0'}
-    dev: true
 
   registry.nlark.com/fs-minipass/2.1.0:
     resolution: {integrity: sha1-f1A2/b8SxjwWkZDL5BmchSJx+fs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/fs-minipass/download/fs-minipass-2.1.0.tgz}
@@ -551,6 +532,13 @@ packages:
       randombytes: registry.nlark.com/randombytes/2.1.0
     dev: false
 
+  registry.nlark.com/source-map/0.5.6:
+    resolution: {integrity: sha1-dc449SvwczxafwwRjYEzSiu19BI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/source-map/download/source-map-0.5.6.tgz}
+    name: source-map
+    version: 0.5.6
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   registry.nlark.com/spawn-command/0.0.2-1:
     resolution: {integrity: sha1-YvXpRmmBwbeW3Fkpk34RycaSG9A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/spawn-command/download/spawn-command-0.0.2-1.tgz}
     name: spawn-command
@@ -582,6 +570,20 @@ packages:
       has-flag: registry.nlark.com/has-flag/4.0.0
     dev: true
 
+  registry.nlark.com/tar/6.1.11:
+    resolution: {integrity: sha1-Z2CjjwA6+hsv/Q/+npq70Oqz1iE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tar/download/tar-6.1.11.tgz}
+    name: tar
+    version: 6.1.11
+    engines: {node: '>= 10'}
+    dependencies:
+      chownr: registry.nlark.com/chownr/2.0.0
+      fs-minipass: registry.nlark.com/fs-minipass/2.1.0
+      minipass: registry.nlark.com/minipass/3.1.5
+      minizlib: registry.nlark.com/minizlib/2.1.2
+      mkdirp: registry.nlark.com/mkdirp/1.0.4
+      yallist: registry.nlark.com/yallist/4.0.0
+    dev: true
+
   registry.nlark.com/tree-kill/1.2.2:
     resolution: {integrity: sha1-TKCakJLIi3OnzcXooBtQeweQoMw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tree-kill/download/tree-kill-1.2.2.tgz}
     name: tree-kill
@@ -607,7 +609,7 @@ packages:
       lodash.uniq: registry.nlark.com/lodash.uniq/4.5.0
       resolve: registry.nlark.com/resolve/1.20.0
       serialize-javascript: registry.nlark.com/serialize-javascript/3.1.0
-      source-map: 0.5.6
+      source-map: registry.nlark.com/source-map/0.5.6
     dev: false
 
   registry.nlark.com/wrap-ansi/7.0.0:
@@ -654,22 +656,33 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  registry.npmmirror.com/@babel/runtime/7.16.0:
+    resolution: {integrity: sha1-4nuXfy4giLokdIv5m14d7OZOTws=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/runtime/download/@babel/runtime-7.16.0.tgz}
+    name: '@babel/runtime'
+    version: 7.16.0
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+    dev: false
+
   registry.npmmirror.com/@cloudflare/workers-types/2.2.2:
     resolution: {integrity: sha1-G87Ra7qAHXr5h9qDVGdUW7XMesY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudflare/workers-types/download/@cloudflare/workers-types-2.2.2.tgz}
     name: '@cloudflare/workers-types'
     version: 2.2.2
     dev: true
 
-  registry.npmmirror.com/@cloudflare/wrangler/1.19.3:
-    resolution: {integrity: sha1-FRm7Ldh2NZhgegSucfgLec+gqQ8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudflare/wrangler/download/@cloudflare/wrangler-1.19.3.tgz}
+  registry.npmmirror.com/@cloudflare/wrangler/1.19.4:
+    resolution: {integrity: sha1-U8+lGYxViKcDpzv9kn+Blt2VGNo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@cloudflare/wrangler/download/@cloudflare/wrangler-1.19.4.tgz}
     name: '@cloudflare/wrangler'
-    version: 1.19.3
+    version: 1.19.4
     hasBin: true
     requiresBuild: true
     dependencies:
       axios: registry.npmmirror.com/axios/0.21.4
       rimraf: registry.nlark.com/rimraf/3.0.2
-      tar: registry.npmmirror.com/tar/6.1.11
+      tar: registry.nlark.com/tar/6.1.11
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   registry.npmmirror.com/@cspotcode/source-map-support/0.7.0:
@@ -689,12 +702,20 @@ packages:
       '@types/estree': registry.nlark.com/@types/estree/0.0.41
     dev: false
 
+  registry.npmmirror.com/@types/node/16.11.6:
+    resolution: {integrity: sha1-a+96KgrWhM9ukPz+Mc7KvZzgo64=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/download/@types/node-16.11.6.tgz}
+    name: '@types/node'
+    version: 16.11.6
+    dev: true
+
   registry.npmmirror.com/axios/0.21.4:
     resolution: {integrity: sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/axios/download/axios-0.21.4.tgz}
     name: axios
     version: 0.21.4
     dependencies:
-      follow-redirects: registry.nlark.com/follow-redirects/1.14.4
+      follow-redirects: registry.npmmirror.com/follow-redirects/1.14.5
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   registry.npmmirror.com/concurrently/6.3.0:
@@ -715,7 +736,7 @@ packages:
     dev: true
 
   registry.npmmirror.com/css-what/5.1.0:
-    resolution: {integrity: sha1-P3tweq32M7r2LCzrhXm1RbtA9/4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-what/download/css-what-5.1.0.tgz}
+    resolution: {integrity: sha1-P3tweq32M7r2LCzrhXm1RbtA9/4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-what/download/css-what-5.1.0.tgz?cache=0&sync_timestamp=1633865236649&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcss-what%2Fdownload%2Fcss-what-5.1.0.tgz}
     name: css-what
     version: 5.1.0
     engines: {node: '>= 6'}
@@ -734,200 +755,200 @@ packages:
     version: 8.0.0
     dev: true
 
-  registry.npmmirror.com/esbuild-android-arm64/0.13.6:
-    resolution: {integrity: sha1-oQm05SA+nsFEytzN8YpdrwIUI+U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-android-arm64/download/esbuild-android-arm64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-android-arm64/0.13.12:
+    resolution: {integrity: sha1-4fGZ3AVAXNxmcMAPtseTgiv4rkw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-android-arm64/download/esbuild-android-arm64-0.13.12.tgz}
     name: esbuild-android-arm64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm64]
     os: [android]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-darwin-64/0.13.6:
-    resolution: {integrity: sha1-GgDvTSs7H+neKKXPGV3xE9ZGEVU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-64/download/esbuild-darwin-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-darwin-64/0.13.12:
+    resolution: {integrity: sha1-9cWeYilVwB8FDlp6ycHUHbcUuU0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-64/download/esbuild-darwin-64-0.13.12.tgz}
     name: esbuild-darwin-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-darwin-arm64/0.13.6:
-    resolution: {integrity: sha1-9IlU1EEFni0GwWdd3MJa8AsWSTU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-arm64/download/esbuild-darwin-arm64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-darwin-arm64/0.13.12:
+    resolution: {integrity: sha1-irrnTClWqKpWj8UseIKTOMSkuYg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-darwin-arm64/download/esbuild-darwin-arm64-0.13.12.tgz}
     name: esbuild-darwin-arm64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-freebsd-64/0.13.6:
-    resolution: {integrity: sha1-s7/qfiHw2AeWIgknEY/HYXDKwG8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-64/download/esbuild-freebsd-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-freebsd-64/0.13.12:
+    resolution: {integrity: sha1-atKrjANk7n3S1uMk2Hao5grnXRI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-64/download/esbuild-freebsd-64-0.13.12.tgz}
     name: esbuild-freebsd-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-freebsd-arm64/0.13.6:
-    resolution: {integrity: sha1-5vV3eoUBJFetoEn8ax4+LDYWFRQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-arm64/download/esbuild-freebsd-arm64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-freebsd-arm64/0.13.12:
+    resolution: {integrity: sha1-bzgVX0wwCsTIrd4f3jzGpEQKgpQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-freebsd-arm64/download/esbuild-freebsd-arm64-0.13.12.tgz}
     name: esbuild-freebsd-arm64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-32/0.13.6:
-    resolution: {integrity: sha1-iwQFgxKnb67GlkuVTx8CqzLOQ/4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-32/download/esbuild-linux-32-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-32/0.13.12:
+    resolution: {integrity: sha1-sdFeMwGIqMId51w/AFhiij7vrec=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-32/download/esbuild-linux-32-0.13.12.tgz}
     name: esbuild-linux-32
-    version: 0.13.6
+    version: 0.13.12
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-64/0.13.6:
-    resolution: {integrity: sha1-VU2O3+P3kfiyaXjrFzsuE2Q0QsA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-64/download/esbuild-linux-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-64/0.13.12:
+    resolution: {integrity: sha1-Jb1ktmFisCNI4y2PEuTJ7mHx0HA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-64/download/esbuild-linux-64-0.13.12.tgz}
     name: esbuild-linux-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-arm/0.13.6:
-    resolution: {integrity: sha1-ztjjWpTgrb8TTl+k4rZh+JfhSyc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm/download/esbuild-linux-arm-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-arm/0.13.12:
+    resolution: {integrity: sha1-a8gclXv/InJWiMxjWcKaJXZb4Js=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm/download/esbuild-linux-arm-0.13.12.tgz}
     name: esbuild-linux-arm
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-arm64/0.13.6:
-    resolution: {integrity: sha1-IUL629vA69UqFm+Vbw7LH2YCESo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm64/download/esbuild-linux-arm64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-arm64/0.13.12:
+    resolution: {integrity: sha1-ulgimEV8xcmsgjonXeEXYgwGU38=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-arm64/download/esbuild-linux-arm64-0.13.12.tgz}
     name: esbuild-linux-arm64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-mips64le/0.13.6:
-    resolution: {integrity: sha1-5cvAUPXUT47MD3mxZBu605GaKzo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-mips64le/download/esbuild-linux-mips64le-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-mips64le/0.13.12:
+    resolution: {integrity: sha1-7zxKuj5YXYR8ut5ZRai0pcYsfOI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-mips64le/download/esbuild-linux-mips64le-0.13.12.tgz}
     name: esbuild-linux-mips64le
-    version: 0.13.6
+    version: 0.13.12
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-linux-ppc64le/0.13.6:
-    resolution: {integrity: sha1-V4aKfrdiwdGfptNnsJpGEPDL98o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-ppc64le/download/esbuild-linux-ppc64le-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-linux-ppc64le/0.13.12:
+    resolution: {integrity: sha1-oh+2ToDDi+8GEi5IKDmQ/G21eOE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-linux-ppc64le/download/esbuild-linux-ppc64le-0.13.12.tgz}
     name: esbuild-linux-ppc64le
-    version: 0.13.6
+    version: 0.13.12
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-netbsd-64/0.13.6:
-    resolution: {integrity: sha1-HF2qYlcfEGXkoRAKHbXkiO8lkCQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-netbsd-64/download/esbuild-netbsd-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-netbsd-64/0.13.12:
+    resolution: {integrity: sha1-Hqf8jPzoiiCkBHuGfvGEBJpmQa4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-netbsd-64/download/esbuild-netbsd-64-0.13.12.tgz}
     name: esbuild-netbsd-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-openbsd-64/0.13.6:
-    resolution: {integrity: sha1-MV/YWXA2WDX2oet7bpM11Z93JWQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-openbsd-64/download/esbuild-openbsd-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-openbsd-64/0.13.12:
+    resolution: {integrity: sha1-rd4y8vGwXcS9T8VE1upaQ3n5yk0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-openbsd-64/download/esbuild-openbsd-64-0.13.12.tgz}
     name: esbuild-openbsd-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-sunos-64/0.13.6:
-    resolution: {integrity: sha1-hCLuufNxLapL79GeXabXya+fx0Q=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-sunos-64/download/esbuild-sunos-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-sunos-64/0.13.12:
+    resolution: {integrity: sha1-p+yvUrc2T77nbciqcH+j4c/zNCw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-sunos-64/download/esbuild-sunos-64-0.13.12.tgz}
     name: esbuild-sunos-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-windows-32/0.13.6:
-    resolution: {integrity: sha1-aU60do7nIhnTvGQVsdOg+EOuqew=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-32/download/esbuild-windows-32-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-windows-32/0.13.12:
+    resolution: {integrity: sha1-qHVgM9yQXEt76hm+affuaICfh3A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-32/download/esbuild-windows-32-0.13.12.tgz}
     name: esbuild-windows-32
-    version: 0.13.6
+    version: 0.13.12
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-windows-64/0.13.6:
-    resolution: {integrity: sha1-Gtv1NnsI5zUmL1cJjRnAfQov7Bw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-64/download/esbuild-windows-64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-windows-64/0.13.12:
+    resolution: {integrity: sha1-rmlKpmygeKy4UJstoxGX7R9A95g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-64/download/esbuild-windows-64-0.13.12.tgz}
     name: esbuild-windows-64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild-windows-arm64/0.13.6:
-    resolution: {integrity: sha1-knkIN0DskKLWOEhcl7HQA3cdaFo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-arm64/download/esbuild-windows-arm64-0.13.6.tgz}
+  registry.npmmirror.com/esbuild-windows-arm64/0.13.12:
+    resolution: {integrity: sha1-eCxai9bXF+pVqq/mSPmSbKNqSog=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild-windows-arm64/download/esbuild-windows-arm64-0.13.12.tgz}
     name: esbuild-windows-arm64
-    version: 0.13.6
+    version: 0.13.12
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  registry.npmmirror.com/esbuild/0.13.6:
-    resolution: {integrity: sha1-ub4ogQjUfoFKbIcp5JXc4P3b9EE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild/download/esbuild-0.13.6.tgz}
+  registry.npmmirror.com/esbuild/0.13.12:
+    resolution: {integrity: sha1-nKxkFZS/A880FFJYwJPXQ+u958o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esbuild/download/esbuild-0.13.12.tgz}
     name: esbuild
-    version: 0.13.6
+    version: 0.13.12
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      esbuild-android-arm64: registry.npmmirror.com/esbuild-android-arm64/0.13.6
-      esbuild-darwin-64: registry.npmmirror.com/esbuild-darwin-64/0.13.6
-      esbuild-darwin-arm64: registry.npmmirror.com/esbuild-darwin-arm64/0.13.6
-      esbuild-freebsd-64: registry.npmmirror.com/esbuild-freebsd-64/0.13.6
-      esbuild-freebsd-arm64: registry.npmmirror.com/esbuild-freebsd-arm64/0.13.6
-      esbuild-linux-32: registry.npmmirror.com/esbuild-linux-32/0.13.6
-      esbuild-linux-64: registry.npmmirror.com/esbuild-linux-64/0.13.6
-      esbuild-linux-arm: registry.npmmirror.com/esbuild-linux-arm/0.13.6
-      esbuild-linux-arm64: registry.npmmirror.com/esbuild-linux-arm64/0.13.6
-      esbuild-linux-mips64le: registry.npmmirror.com/esbuild-linux-mips64le/0.13.6
-      esbuild-linux-ppc64le: registry.npmmirror.com/esbuild-linux-ppc64le/0.13.6
-      esbuild-netbsd-64: registry.npmmirror.com/esbuild-netbsd-64/0.13.6
-      esbuild-openbsd-64: registry.npmmirror.com/esbuild-openbsd-64/0.13.6
-      esbuild-sunos-64: registry.npmmirror.com/esbuild-sunos-64/0.13.6
-      esbuild-windows-32: registry.npmmirror.com/esbuild-windows-32/0.13.6
-      esbuild-windows-64: registry.npmmirror.com/esbuild-windows-64/0.13.6
-      esbuild-windows-arm64: registry.npmmirror.com/esbuild-windows-arm64/0.13.6
+      esbuild-android-arm64: registry.npmmirror.com/esbuild-android-arm64/0.13.12
+      esbuild-darwin-64: registry.npmmirror.com/esbuild-darwin-64/0.13.12
+      esbuild-darwin-arm64: registry.npmmirror.com/esbuild-darwin-arm64/0.13.12
+      esbuild-freebsd-64: registry.npmmirror.com/esbuild-freebsd-64/0.13.12
+      esbuild-freebsd-arm64: registry.npmmirror.com/esbuild-freebsd-arm64/0.13.12
+      esbuild-linux-32: registry.npmmirror.com/esbuild-linux-32/0.13.12
+      esbuild-linux-64: registry.npmmirror.com/esbuild-linux-64/0.13.12
+      esbuild-linux-arm: registry.npmmirror.com/esbuild-linux-arm/0.13.12
+      esbuild-linux-arm64: registry.npmmirror.com/esbuild-linux-arm64/0.13.12
+      esbuild-linux-mips64le: registry.npmmirror.com/esbuild-linux-mips64le/0.13.12
+      esbuild-linux-ppc64le: registry.npmmirror.com/esbuild-linux-ppc64le/0.13.12
+      esbuild-netbsd-64: registry.npmmirror.com/esbuild-netbsd-64/0.13.12
+      esbuild-openbsd-64: registry.npmmirror.com/esbuild-openbsd-64/0.13.12
+      esbuild-sunos-64: registry.npmmirror.com/esbuild-sunos-64/0.13.12
+      esbuild-windows-32: registry.npmmirror.com/esbuild-windows-32/0.13.12
+      esbuild-windows-64: registry.npmmirror.com/esbuild-windows-64/0.13.12
+      esbuild-windows-arm64: registry.npmmirror.com/esbuild-windows-arm64/0.13.12
     dev: true
 
   registry.npmmirror.com/eval5/1.4.6:
@@ -935,11 +956,23 @@ packages:
     name: eval5
     version: 1.4.6
     dependencies:
-      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       '@types/acorn': registry.npmmirror.com/@types/acorn/4.0.6
       '@types/estree': registry.nlark.com/@types/estree/0.0.41
       acorn: registry.nlark.com/acorn/7.4.1
     dev: false
+
+  registry.npmmirror.com/follow-redirects/1.14.5:
+    resolution: {integrity: sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.5.tgz}
+    name: follow-redirects
+    version: 1.14.5
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
 
   registry.npmmirror.com/glob/7.2.0:
     resolution: {integrity: sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz?cache=0&sync_timestamp=1632366597830&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fglob%2Fdownload%2Fglob-7.2.0.tgz}
@@ -962,10 +995,10 @@ packages:
       has: registry.nlark.com/has/1.0.3
     dev: false
 
-  registry.npmmirror.com/node-html-parser/5.0.0:
-    resolution: {integrity: sha1-o5jW0nRZNGxRfcGx4913nhLWhcM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-html-parser/download/node-html-parser-5.0.0.tgz}
+  registry.npmmirror.com/node-html-parser/5.1.0:
+    resolution: {integrity: sha1-dT9aYM3+bQJ8FYV8uBffWSwYyZg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-html-parser/download/node-html-parser-5.1.0.tgz}
     name: node-html-parser
-    version: 5.0.0
+    version: 5.1.0
     dependencies:
       css-select: registry.nlark.com/css-select/4.1.3
       he: registry.nlark.com/he/1.2.0
@@ -1009,25 +1042,11 @@ packages:
       ansi-regex: registry.nlark.com/ansi-regex/5.0.1
     dev: true
 
-  registry.npmmirror.com/tar/6.1.11:
-    resolution: {integrity: sha1-Z2CjjwA6+hsv/Q/+npq70Oqz1iE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tar/download/tar-6.1.11.tgz}
-    name: tar
-    version: 6.1.11
-    engines: {node: '>= 10'}
-    dependencies:
-      chownr: registry.nlark.com/chownr/2.0.0
-      fs-minipass: registry.nlark.com/fs-minipass/2.1.0
-      minipass: registry.nlark.com/minipass/3.1.5
-      minizlib: registry.nlark.com/minizlib/2.1.2
-      mkdirp: registry.nlark.com/mkdirp/1.0.4
-      yallist: registry.nlark.com/yallist/4.0.0
-    dev: true
-
-  registry.npmmirror.com/ts-node/10.3.0_typescript@4.4.4:
-    resolution: {integrity: sha1-p5fy7T/1DJpdgUzkAEN8sMHASLQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ts-node/download/ts-node-10.3.0.tgz}
-    id: registry.npmmirror.com/ts-node/10.3.0
+  registry.npmmirror.com/ts-node/10.4.0_0cb88d80cb04d25b21fa3ec194608c65:
+    resolution: {integrity: sha1-aA+IlFiF9ObPRQ5/DWIj3UBIlfc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ts-node/download/ts-node-10.4.0.tgz}
+    id: registry.npmmirror.com/ts-node/10.4.0
     name: ts-node
-    version: 10.3.0
+    version: 10.4.0
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'
@@ -1045,6 +1064,7 @@ packages:
       '@tsconfig/node12': registry.nlark.com/@tsconfig/node12/1.0.9
       '@tsconfig/node14': registry.nlark.com/@tsconfig/node14/1.0.1
       '@tsconfig/node16': registry.nlark.com/@tsconfig/node16/1.0.2
+      '@types/node': registry.npmmirror.com/@types/node/16.11.6
       acorn: registry.nlark.com/acorn/8.5.0
       acorn-walk: registry.nlark.com/acorn-walk/8.2.0
       arg: registry.nlark.com/arg/4.1.3
