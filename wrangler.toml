@@ -1,9 +1,10 @@
-compatibility_date = "2021-10-15"
-compatibility_flags = []
-kv_namespaces = [{binding = "VISIT_COUNTER", preview_id = "e97079cd956c4eada517df1e9b3f48a2", id = "011d2300c1b24c028a7b99d36306b65b"}]
+compatibility_date = "2022-09-16"
 name = "visit-counter"
-route = ''
-type = "javascript"
-usage_model = ''
+send_metrics = true
+usage_model = 'bundled'
 workers_dev = true
-zone_id = ''
+
+[[kv_namespaces]]
+binding = "VISIT_COUNTER"
+id = "011d2300c1b24c028a7b99d36306b65b"
+preview_id = "e97079cd956c4eada517df1e9b3f48a2"

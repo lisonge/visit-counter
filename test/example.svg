@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="16">
+  <g>
+    <text x="5" y="13" style="font-size: 13px">
+      1
+    </text><text x="18" y="13" style="font-size: 13px">
+      3
+    </text><text x="31" y="13" style="font-size: 13px">
+      1
+    </text><text x="44" y="13" style="font-size: 13px">
+      5
+      <animate attributeName="y" from="13" to="-4" begin="400ms" dur="700ms" fill="freeze"></animate>
+    </text> <text x="5" y="30" style="font-size: 13px">
+      1
+    </text><text x="18" y="30" style="font-size: 13px">
+      3
+    </text><text x="31" y="30" style="font-size: 13px">
+      1
+    </text><text x="44" y="30" style="font-size: 13px">
+      6
+      <animate attributeName="y" from="30" to="13" begin="500ms" dur="700ms" fill="freeze"></animate>
+    </text>
+  </g>
+</svg>

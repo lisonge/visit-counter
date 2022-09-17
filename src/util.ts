@@ -1,40 +1,20 @@
-import { HTMLElement, parse } from 'node-html-parser';
-import Vue from 'vue';
-import _renderToString from 'vue-server-renderer/basic';
+export const range = (p0: unknown, p1: unknown, p2: unknown) => {};
 
-export async function renderToString(count: number, template: string) {
-    const oldNode = parse(template);
-    const styleNodeList = oldNode.querySelectorAll('style');
-    const backupStyleList = styleNodeList.map((style) => {
-        const h = new HTMLElement('style', {}, '', null);
-        h.innerHTML = style.innerHTML;
-        h.setAttributes(style.attributes);
-        return h;
-    });
-    styleNodeList.forEach((style) => {
-        style.remove();
-    });
+export const toSafeInteger = (value: unknown, defaultValue = 0) => {
+  const n = Number(value);
+  if (Number.isNaN(n) || !Number.isSafeInteger(n)) {
+    return defaultValue;
+  }
+  return n;
+};
 
-    const app = new Vue({
-        data: {
-            count,
-        },
-        template: oldNode.toString(),
-    });
-    const newTemplate = await new Promise<string>((res, rej) => {
-        _renderToString(app, {}, (error, result) => {
-            if (error) {
-                rej(error);
-            } else {
-                res(result!);
-            }
-        });
-    });
-    const newNode = parse(newTemplate);
-    const styleSetG = new HTMLElement('g', {}, '', null);
-    backupStyleList.forEach((style) => {
-        styleSetG.appendChild(style);
-    });
-    newNode.querySelector('*')?.appendChild(styleSetG);
-    return newNode.toString();
-}
+export const toBigInt = (
+  value: string | number | boolean,
+  defaultValue = 0n
+) => {
+  try {
+    return BigInt(value);
+  } catch {
+    return defaultValue;
+  }
+};

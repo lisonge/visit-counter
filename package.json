@@ -2,29 +2,29 @@
   "name": "visit-counter",
   "version": "1.0.0",
   "description": "visit-counter",
-  "main": "dist/index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "build": "ts-node esbuild.config.ts",
-    "watch-esbuild": "ts-node esbuild.config.ts --watch",
-    "watch-worker": "wrangler dev",
-    "start": "concurrently -k \"npm:watch-esbuild\" \"npm:watch-worker\"",
-    "publish": "wrangler publish"
+    "wrangler:publish": "wrangler publish dist/index.js",
+    "wrangler:dev": "wrangler dev dist/index.js --local",
+    "vite:build-watch": "vite build --watch --mode=development",
+    "vite:build": "vite build"
   },
   "author": "lisonge",
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "^2.2.2",
-    "@cloudflare/wrangler": "^1.19.4",
-    "@types/node": "^16.11.6",
-    "concurrently": "^6.3.0",
-    "esbuild": "^0.13.12",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.4.4"
+    "@babel/core": "7.19.1",
+    "@cloudflare/workers-types": "3.16.0",
+    "@preact/preset-vite": "2.4.0",
+    "@types/node": "16",
+    "typescript": "4.8.3",
+    "vite": "3.1.1"
   },
   "dependencies": {
-    "eval5": "^1.4.6",
-    "node-html-parser": "^5.1.0",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14"
+    "preact": "10.11.0",
+    "preact-render-to-string": "5.2.4"
+  },
+  "volta": {
+    "node": "16.17.0"
   }
 }
