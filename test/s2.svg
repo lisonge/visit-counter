@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="20">
+  <defs>
+    <style>
+      text {
+        font-size: 14px;
+        fill: #FFF;
+      }
+    </style>
+  </defs>
+  <g>
+    <text x="0" y="14">2</text>
+    <text x="10" y="14">70</text>
+    <text x="0" y="31.5">2</text>
+    <text x="10" y="31.5">80</text>
+  </g>
+</svg>

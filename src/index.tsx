@@ -36,6 +36,38 @@ export default {
     } else {
       await VISIT_COUNTER.put(countKey, newCount.toString());
     }
+    if (u.searchParams.has('html')) {
+      return new Response(
+        render(
+          <html>
+            <head>
+              <title>{'Example'}</title>
+              <style>{`*{padding: 0;margin: 0;}`}</style>
+            </head>
+            <body
+              style={{
+                display: 'inline-block',
+                'border-width': '1px',
+                'border-color': '#000',
+                'border-style': 'dashed',
+                margin: '10px',
+              }}
+            >
+              <Counter count={newCount + start} />
+            </body>
+          </html>,
+          undefined,
+          {
+            pretty: true,
+          }
+        ),
+        {
+          headers: {
+            'content-type': 'text/html',
+          },
+        }
+      );
+    }
 
     return new Response(
       render(<Counter count={newCount + start} />, undefined, {
